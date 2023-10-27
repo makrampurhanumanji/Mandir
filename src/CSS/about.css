@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(to bottom, rgb(255, 106, 0), white);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; /* Reset margin to remove extra space */
+}
+
+
+.header h1 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header img {
+    width: 170px; /* Adjust the image size as needed */
+    height: 150px; /* Adjust the image size as needed */
+}
+
+.header .user-login {
+    display: flex;
+    align-items: center;
+}
+
+.header .user-login input[type="text"] {
+    padding: 5px;
+}
+
+.header .user-login button {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Add rounded corners to the image */
+.rounded-image {
+    border-radius: 10px; /* Adjust the radius as needed */
+}
+/* Navigation Bar Styles */
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: orange;
+    color: white;
+}
+
+/* Body Styles */
+.body-container {
+    display: flex;
+    flex-direction: column; /* To stack content vertically */
+    align-items: center;
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.video-container {
+    width: 70%; /* Set the width to 50% for the video container */
+    margin: 0 auto;
+    
+}
+.videoframe {
+    margin-top: 20px;
+    border-radius: 30px; /* Adjust the radius as needed for softer or harder edges */
+    overflow: hidden; /* Hides content outside the rounded border */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add a soft shadow for depth */
+}
+
+.text-container {
+    width: 200%; /* Set the width to 50% for the text container */
+}
+
+.golden-frame {
+    background-color: #DAA520; /* Golden background color */
+    padding: 20px;
+    border: 0.2cm solid #8B4513; /* 0.2cm frame thickness, brown frame */
+    text-align: justify;
+    margin-bottom: 20px
+}
+
+/* CSS for Temple Members */
+.members-details .member {
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+    border: 0.2cm solid #f1c937; /* 0.2cm frame thickness, brown frame */
+    background-color: #f9eac8; /* Golden background color */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* CSS for Submembers */
+.members-details .submember {
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+    border: 0.2cm solid #f1c937; /* 0.2cm frame thickness, brown frame */
+    background-color: #f0dec7; /* Golden background color */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* CSS for Developers */
+.members-details .developer {
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+    border: 0.2cm solid #695cf8; /* 0.2cm frame thickness, brown frame */
+    background-color: #bcc4f9; /* Golden background color */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Team Container Styles */
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.frame {
+    flex: 1;
+    padding: 20px;
+    border: 0.2cm solid gold; /* Golden frame with 0.2cm thickness */
+    border-radius: 10px;
+    margin: 20px;
+    margin-bottom: 40px
+}
+
+.frame h3 {
+    font-size: 20px;
+}
+
+/* Member Styles */
+.member,
+.submember,
+.developer {
+    text-align: center;
+    padding: 20px;
+}
+
+.member img,
+.submember img,
+.developer img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px;
+}
+/* Footer Styles */
+.mountain-range-footer {
+    background-image: url('mount.png'); /* Replace with your mountain range image */
+    background-size: cover;
+    background-position: center;
+    height: 210px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.hanumanji-container {
+    position: absolute;
+    bottom: 0;
+    left: -5px; /* Initial position outside the viewport on the left */
+    animation: hanumanji-marquee 10s ease-in-out infinite;
+}
+
+.hanumanji-image {
+    width: 150px;
+    height: auto;
+}
+
+.footer p {
+    color: #8B4513;
+    font-size: 16px;
+    margin: 10px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.footer a {
+    color: #8B4513;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #FF4500;
+}
+
+.content-container {
+    margin-left: 80px; /* Adjust the value as needed to move the content rightwards */
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.locate {
+    font-size: 20px;
+}
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #8B4513;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FF4500;
+}
+
+@keyframes hanumanji-marquee {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(1000%);
+    }
+}

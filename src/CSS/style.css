@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(to bottom, rgb(255, 106, 0), white);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; /* Reset margin to remove extra space */
+}
+
+
+.header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.header img {
+    width: 170px; /* Adjust the image size as needed */
+    height: 150px; /* Adjust the image size as needed */
+}
+
+.header .user-login {
+    display: flex;
+    align-items: center;
+}
+
+.header .user-login input[type="text"] {
+    padding: 5px;
+}
+
+.header .user-login button {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Add rounded corners to the image */
+.rounded-image {
+    border-radius: 10px; /* Adjust the radius as needed */
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: orange;
+    color: white;
+}
+
+/* Body Styles */
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 0; /* Reset margin to remove extra space */
+}
+.image-container {
+    width: 50%; /* 50% width for the image container */
+}
+
+.highlighted-photo {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Adjust the image size as needed */
+    border: 5px solid orange;
+    border-radius: 10px; /* Add rounded corners to the image */
+}
+
+.description-container {
+width: 50%;
+background-color: #f7e8d5; /* Light beige background color */
+padding: 20px;
+border: 2px solid #ffbe5c; /* Border color */
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Box shadow for a raised effect */
+text-align: left; /* Align text to the left */
+font-size: 18px;
+color: #2e2924; /* Text color */
+}
+
+.description {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 30%;
+    transform: translateY(-50%);
+    background-color: #fee4c4;
+    border: 2px solid #ddad36;
+    width: 250px;
+    padding: 15px;
+    z-index: 999;
+}
+
+.popup-content {
+    text-align: left;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+.mountain-range-footer {
+    background-image: url('mount.png'); /* Replace with your mountain range image */
+    background-size: cover;
+    background-position: center;
+    height: 210px; /* Adjust the height as needed */
+    position: relative; /* Make the mountain image container relative */
+    margin: 0; /* Reset margin to remove extra space */
+    padding: 0; /* Reset padding to remove extra space */
+}
+
+.hanumanji-container {
+    position: absolute;
+    bottom: 0;
+    left: -5px; /* Initial position outside the viewport on the left */
+    animation: hanumanji-marquee 10s ease-in-out infinite; /* Adjust the duration as needed */
+}
+
+.hanumanji-image {
+    width: 170px; /* Adjust the image size as needed */
+    height: auto;
+}
+
+.footer p {
+    color: #8B4513;
+    font-size: 16px;
+    margin: 10px 0;
+    position: relative; /* Make the text elements relative */
+    z-index: 2; /* Position text elements above mountain image */
+}
+
+.footer a {
+    color: #8B4513;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #FF4500;
+}
+
+.content-container {
+    margin-left: 80px; /* Adjust the value as needed to move the content rightwards */
+}
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #8B4513;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FF4500;
+}
+
+@keyframes hanumanji-marquee {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(950%); /* Adjust the distance based on your needs */
+    }
+}

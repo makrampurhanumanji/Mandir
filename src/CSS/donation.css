@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(to bottom, rgb(255, 106, 0), white);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; /* Reset margin to remove extra space */
+}
+
+
+.header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.header img {
+    width: 170px; /* Adjust the image size as needed */
+    height: 150px; /* Adjust the image size as needed */
+}
+
+.header .user-login {
+    display: flex;
+    align-items: center;
+}
+
+.header .user-login input[type="text"] {
+    padding: 5px;
+}
+
+.header .user-login button {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Add rounded corners to the image */
+.rounded-image {
+    border-radius: 10px; /* Adjust the radius as needed */
+}
+/* Navigation Bar Styles */
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: orange;
+    color: white;
+}
+
+/* Body Styles */
+.body-container {
+    display: flex;
+    flex-direction: column; /* To stack content vertically */
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.donation-frame {
+    border: 0.2cm solid #FFD700; /* 0.2cm golden frame */
+    background-color: #e6d1bf; /* Baby pink background */
+    padding: 20px; /* Adjust the padding as needed */
+    margin: 20px;
+    text-align: auto;
+}
+
+.qr-code img {
+    max-width: 100%; /* Ensure the QR code image stays within the frame */
+}
+
+p {
+    font-size: 18px;
+}
+
+.payment-options {
+    margin-top: 10px;
+}
+
+.payment-options img {
+    width: 100px;
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+.mountain-range-footer {
+    background-image: url('mount.png'); /* Replace with your mountain range image */
+    background-size: cover;
+    background-position: center;
+    height: 210px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.hanumanji-container {
+    position: absolute;
+    bottom: 0;
+    left: -5px; /* Initial position outside the viewport on the left */
+    animation: hanumanji-marquee 10s ease-in-out infinite;
+}
+
+.hanumanji-image {
+    width: 150px;
+    height: auto;
+}
+
+.footer p {
+    color: #8B4513;
+    font-size: 16px;
+    margin: 10px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.footer a {
+    color: #8B4513;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #FF4500;
+}
+
+.content-container {
+    margin-left: 80px; /* Adjust the value as needed to move the content rightwards */
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #8B4513;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FF4500;
+}
+
+@keyframes hanumanji-marquee {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(1000%);
+    }
+}
